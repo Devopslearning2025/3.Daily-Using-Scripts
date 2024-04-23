@@ -16,3 +16,5 @@ else
 fi    
 
 FILES=$(find $SOURCE_DIR -name *.log -mtime +14)
+
+echo "The files are $FILES"
