@@ -23,4 +23,5 @@ echo "$FILES"
 while IFS= read -r line
 do 
     echo "Deleting file is: $line"
+    rm -rf $line
 done <<< $FILES
