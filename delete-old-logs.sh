@@ -19,3 +19,8 @@ FILES=$(find $SOURCE_DIR -name *.log -mtime +14)
 
 echo "The below files are to be deleted";echo " "
 echo "$FILES"
+
+while IFS= read -r line
+do 
+    echo "Deleting file is: $line"
+done <<< $FILES
