@@ -3,7 +3,7 @@
 BACKUP_DIR=/tmp
 DATE=$(date +%F)
 FILE_PATH=/tmp/ram
-FILE_NAME=websphere
+FILE_NAME="websphere"
 
 if [ -d ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz  ]
 then
