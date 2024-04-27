@@ -1,9 +1,9 @@
 #!/bin/bash
 
-BACKUP_DIR=/tmp
-DATE=$(date +%F)
+BACKUP_DIR="/tmp/ram/archive"
 FILE_PATH=/tmp/ram
 FILE_NAME="websphere"
+DATE=$(date +%F)
 
 if [ -d ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz  ]
 then
