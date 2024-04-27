@@ -12,4 +12,5 @@ then
 else 
     echo "Backup file is not there, Taking the backup"
     tar -cvzf ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz $FILE_NAME
+    ls -1 ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz
 fi
