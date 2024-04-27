@@ -5,7 +5,7 @@ FILE_PATH=/tmp/ram
 FILE_NAME="websphere"
 DATE=$(date +%F)
 
-if [ -d ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz  ]
+if [ -f ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz  ]
 then
     echo "file is already exists"
     ls -lrth ${BACKUP_DIR}/${FILE_NAME}-${DATE}.tar.gz
